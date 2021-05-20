@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="clock.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <title>Clock Demo</title>
+  </head>
+  <body>
+    <div class="clock">
+      CLOCK
+    </div>
+    <script src="clock.js" charset="utf-8"></script>
+    <script charset="utf-8">
+      var clockElement = document.querySelector('.clock');
+      var clock = new Clock(clockElement, 50);
+      clock.render();
+      console.log(clockElement.innerText);
+    </script>
+  </body>
+</html>
